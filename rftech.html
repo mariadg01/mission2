@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RF Tech</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
+  </head>
+
+  <body>
+    <!-- BACKGROUND IMAGE COVERS ALL ELEMENT -->
+    <div class="container">
+      <!-- HEADER BLOCK -->
+      <div class="header">
+        <div><img class="logo" src="logo2.svg" alt="logo" /></div>
+        <div class="nav">
+          <ul>
+            <li>
+              <input
+                class="searchText active"
+                placeholder="Type to search"
+                type="text"
+              />
+            </li>
+            <li>
+              <a class="search-btn active" href="#"
+                ><i class="fa fa-search"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank"
+                ><i class="fa fa-facebook-square"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com" target="_blank"
+                ><i class="fa fa-linkedin-square"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com" target="_blank"
+                ><i class="fa fa-twitter-square"></i
+              ></a>
+            </li>
+            <li><i class="fa fa-bars"></i></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ABOUT WEBPAGE SERVICES / CATCHPHRASE -->
+      <h1></h1>
+      <button id="mainBtn">Talk to Us</button>
+
+      <!-- SIDEBAR WHICH HIDES WHEN NOT ACTIVATED -->
+      <div class="sidebar">
+        <div class="sidebar-header">
+          <img class="logo" src="logo2.svg" alt="logo" />
+          <i class="fa fa-times"></i>
+        </div>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Capabilities</a></li>
+          <li><a href="#">PCB Quote</a></li>
+          <li><a href="#" class="contactBtn">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="contact-box active">
+      <form>
+        <input type="text" class="input-field" placeholder="Name" />
+        <input type="text" class="input-field" placeholder="Email" />
+        <input type="text" class="input-field" placeholder="Subject" />
+        <textarea
+          name="text"
+          class="input-field textarea-field"
+          placeholder="Message"
+        ></textarea>
+        <button type="button" class="formBtn">Send Message</button>
+        <div class="close-form">
+          <i class="fa fa-times" id="closeForm"></i>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
